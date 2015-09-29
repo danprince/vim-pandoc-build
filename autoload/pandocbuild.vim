@@ -1,4 +1,4 @@
-function! pandoc#build(...)
+function! PandocBuild(...)
   let output = a:0 > 0 ? a:1 : '/tmp/output.pdf'
   let file = @%
 
@@ -7,6 +7,3 @@ function! pandoc#build(...)
 
   execute '!' . compile . '&&' . preview
 endfunction
-
-command! -nargs=? PandocBuild call pandoc#build(<f-args>)
-
