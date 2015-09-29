@@ -1,4 +1,4 @@
-function! PandocBuild(...)
+function! pandoc#build(...)
   let output = a:0 > 0 ? a:1 : '/tmp/output.pdf'
   let file = @%
 
