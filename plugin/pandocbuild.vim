@@ -1,2 +1,2 @@
-command! -nargs=? PandocBuild call pandocbuild#PandocBuild(<f-args>)
+command! -nargs=? PandocBuild call pandocbuild#Build(<f-args>)
 
